@@ -13,7 +13,13 @@ def get_lyrics(title, artist=None):
 
     payload = {"apikey": MUSIXMATCH_KEY, "track_id": track_temp_id}
     response = requests.get(f"{MUSIXMATCH_BASE_URL}{MUSIXMATCH_TRACK_LYRICS_GET}", params=payload)
-    print(response.json())
+    formatted_response = response.json()
+    response_header = formatted_response["message"]["header"]
+    response_body = formatted_response["message"]["body"]
+    if response_header["status_code"] == 200: # All good, we can work with the response
+        print(response_body["lyrics"]["lyrics_body"])
+    else: # Something happened, return an error
+        return "Error when looking up the song"
 
 
 get_lyrics(title="Title")
