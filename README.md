@@ -3,8 +3,8 @@ Initial languages prototypes.
 
 ## Initial requirements
 
-* Python 3.9 (setup[https://docs.python.org/3/using/index.html])
-* pipenv (setup[https://pipenv.pypa.io/en/latest/#install-pipenv-today])
+* Python 3.9 [setup](https://docs.python.org/3/using/index.html])
+* pipenv [setup](https://pipenv.pypa.io/en/latest/#install-pipenv-today)
 
 ## Setting up
 
