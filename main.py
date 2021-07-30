@@ -17,7 +17,7 @@ def get_lyrics(title, artist=None):
     response_header = formatted_response["message"]["header"]
     response_body = formatted_response["message"]["body"]
     if response_header["status_code"] == 200: # All good, we can work with the response
-        print(response_body["lyrics"]["lyrics_body"])
+        return response_body["lyrics"]["lyrics_body"]
     else: # Something happened, return an error
         return "Error when looking up the song"
 
