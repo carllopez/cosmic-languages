@@ -14,7 +14,8 @@ will be deployed with the dependecies needed.
 ## Running 
 
 It's a simple as `python main.py`, which will get for you (and print on the command line) for now
-(as of 07/29/2021) an extract of the lyrics of _Somebody That I Used To Know - by Gotye_.
+(as of 08/01/2021) an extract of the lyrics found for "Blackened" and its corresponding lookup,
+word by word, in the form of a Python dictionary
 
 ## Testing
 
